@@ -1,0 +1,27 @@
+{
+  "name": "jsboxscripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ichicoro/JSBoxScripts.git"
+  },
+  "keywords": [
+    "jsbox",
+    "js"
+  ],
+  "author": "Ichicoro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ichicoro/JSBoxScripts/issues"
+  },
+  "homepage": "https://github.com/Ichicoro/JSBoxScripts#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "qrcode": "^1.4.1"
+  }
+}

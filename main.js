@@ -31,15 +31,15 @@ app.get('/:scriptName', (req, res) => {
     const baseURL = `./jsbox_scripts/${script}`
     try {
         var info = JSON.parse(fs.readFileSync(`${baseURL}/info.json`, "utf8"))
-    } catch(e) { res.status(404).return("eh") }
+    } catch(e) { res.status(404).send("Script not found") }
 
     if (info.name == undefined || info.version == undefined) {
-        res.status(404).return("eh")
+        res.status(404).send("Script not found")
     }
 
     try {
         var templateString = fs.readFileSync(`./template_details.html`, "utf8")
-    } catch(e) { res.status(404).return("eh") }
+    } catch(e) { res.status(404).send("Script not found") }
 
     // 
     console.log(`requrl: ${requrl}/data, name=${info.name}`)
